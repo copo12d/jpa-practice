@@ -12,7 +12,7 @@ To start the MySQL and PostgreSQL databases using Docker, follow these steps:
 Clone the repository
 
 ```bash
-git clone https://github.com/your-repo/jpa-practice.git
+git clone https://github.com/copo12d/jpa-practice.git
 cd jpa-practice
 ```
 Ensure Docker is running
