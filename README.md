@@ -13,7 +13,6 @@ Clone the repository
 
 ```bash
 git clone https://github.com/copo12d/jpa-practice.git
-cd jpa-practice
 ```
 Ensure Docker is running
 
