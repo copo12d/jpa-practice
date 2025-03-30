@@ -1,25 +1,26 @@
 package com.copo12d.jpa.models;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.w3c.dom.stylesheets.LinkStyle;
+import lombok.experimental.SuperBuilder;
 
-import java.time.LocalDate;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "AUTHOR_TBL")
 @Data
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 @NoArgsConstructor
-public class Author {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class Author extends BaseEntity {
+
     @Column(
             name ="f_name"
     )
